@@ -1,0 +1,25 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ActiveSupport	/Users/kitlangton/Viking/assessments/week4/bear_necessities/test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
+Application	/Users/kitlangton/Viking/assessments/week4/bear_necessities/config/application.rb	/^  class Application < Rails::Application$/;"	c	class:CruddyBearNecessities
+ApplicationController	/Users/kitlangton/Viking/assessments/week4/bear_necessities/app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	/Users/kitlangton/Viking/assessments/week4/bear_necessities/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+Bear	/Users/kitlangton/Viking/assessments/week4/bear_necessities/app/models/bear.rb	/^class Bear < ActiveRecord::Base$/;"	c
+BearsController	/Users/kitlangton/Viking/assessments/week4/bear_necessities/app/controllers/bears_controller.rb	/^class BearsController < ApplicationController$/;"	c
+BearsHelper	/Users/kitlangton/Viking/assessments/week4/bear_necessities/app/helpers/bears_helper.rb	/^module BearsHelper$/;"	m
+CreateBears	/Users/kitlangton/Viking/assessments/week4/bear_necessities/db/migrate/20160201163431_create_bears.rb	/^class CreateBears < ActiveRecord::Migration$/;"	c
+CruddyBearNecessities	/Users/kitlangton/Viking/assessments/week4/bear_necessities/config/application.rb	/^module CruddyBearNecessities$/;"	m
+bear_params	/Users/kitlangton/Viking/assessments/week4/bear_necessities/app/controllers/bears_controller.rb	/^  def bear_params$/;"	f	class:BearsController
+change	/Users/kitlangton/Viking/assessments/week4/bear_necessities/db/migrate/20160201163431_create_bears.rb	/^  def change$/;"	f	class:CreateBears
+create	/Users/kitlangton/Viking/assessments/week4/bear_necessities/app/controllers/bears_controller.rb	/^  def create$/;"	f	class:BearsController
+destroy	/Users/kitlangton/Viking/assessments/week4/bear_necessities/app/controllers/bears_controller.rb	/^  def destroy$/;"	f	class:BearsController
+edit	/Users/kitlangton/Viking/assessments/week4/bear_necessities/app/controllers/bears_controller.rb	/^  def edit$/;"	f	class:BearsController
+index	/Users/kitlangton/Viking/assessments/week4/bear_necessities/app/controllers/bears_controller.rb	/^  def index$/;"	f	class:BearsController
+new	/Users/kitlangton/Viking/assessments/week4/bear_necessities/app/controllers/bears_controller.rb	/^  def new$/;"	f	class:BearsController
+set_bear	/Users/kitlangton/Viking/assessments/week4/bear_necessities/app/controllers/bears_controller.rb	/^  def set_bear$/;"	f	class:BearsController
+show	/Users/kitlangton/Viking/assessments/week4/bear_necessities/app/controllers/bears_controller.rb	/^  def show$/;"	f	class:BearsController
+update	/Users/kitlangton/Viking/assessments/week4/bear_necessities/app/controllers/bears_controller.rb	/^  def update$/;"	f	class:BearsController

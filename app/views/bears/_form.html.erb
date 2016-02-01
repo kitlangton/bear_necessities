@@ -1,0 +1,18 @@
+<% if @bear.errors.any? %>
+<ul>
+  <% @bear.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+  <% end %>
+</ul>
+<% end %>
+<%= form_for @bear do |f| %>
+  <%= f.label :name %>
+  <br>
+  <%= f.text_field :name %>
+  <br>
+  <%= f.label :description %>
+  <br>
+  <%= f.text_area :description %>
+  <br>
+  <%= f.submit %>
+<% end %>

@@ -1,0 +1,12 @@
+<h1><%= @bear.name %> The Bear!</h1>
+
+<div class="bear">
+  <div class="image">
+    <img src="http://placebear.com/500/200" alt="Bear">
+  </div>
+  <div class="description">
+    <%= @bear.description %>
+  </div>
+</div>
+
+<%= render partial: 'controls', locals: {bear: @bear} %>

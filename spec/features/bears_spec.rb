@@ -2,6 +2,10 @@ require 'rails_helper'
 
 describe 'Bears routes' do
 
+  before do
+    Bear.create(name: "Pacha", description: "Bacha")
+  end
+
   # root
   describe 'GET /' do
     it 'does not raise error' do

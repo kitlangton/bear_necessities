@@ -1,0 +1,8 @@
+<div class="bear">
+  <div class="name">
+    <strong><%= link_to bear.name, bear %></strong>
+    —
+    <%= render partial: 'controls', locals: {bear: bear} %>
+  </div>
+</div>
+<br>
