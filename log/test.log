@@ -404,3 +404,62 @@ Processing by BearsController#edit as HTML
   Rendered bears/edit.html.erb within layouts/application (2.6ms)
 Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.1ms)
   [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "bears" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Pacha"], ["description", "Bacha"], ["created_at", "2016-02-01 16:57:49.081331"], ["updated_at", "2016-02-01 16:57:49.081331"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2016-02-01 11:57:49 -0500
+Processing by BearsController#index as HTML
+  [1m[35mBear Load (0.2ms)[0m  SELECT "bears".* FROM "bears"
+  Rendered bears/_controls.html.erb (0.8ms)
+  Rendered bears/_bear.html.erb (4.4ms)
+  Rendered bears/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 437ms (Views: 424.7ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "bears" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Pacha"], ["description", "Bacha"], ["created_at", "2016-02-01 16:57:49.556942"], ["updated_at", "2016-02-01 16:57:49.556942"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/bears" for 127.0.0.1 at 2016-02-01 11:57:49 -0500
+Processing by BearsController#index as HTML
+  [1m[35mBear Load (0.2ms)[0m  SELECT "bears".* FROM "bears"
+  Rendered bears/_controls.html.erb (0.4ms)
+  Rendered bears/_bear.html.erb (1.2ms)
+  Rendered bears/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "bears" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Pacha"], ["description", "Bacha"], ["created_at", "2016-02-01 16:57:49.575071"], ["updated_at", "2016-02-01 16:57:49.575071"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/bears/1/edit" for 127.0.0.1 at 2016-02-01 11:57:49 -0500
+Processing by BearsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBear Load (0.2ms)[0m  SELECT  "bears".* FROM "bears" WHERE "bears"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered bears/_form.html.erb (35.3ms)
+  Rendered bears/edit.html.erb within layouts/application (38.1ms)
+Completed 200 OK in 55ms (Views: 42.8ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "bears" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Pacha"], ["description", "Bacha"], ["created_at", "2016-02-01 16:57:49.643513"], ["updated_at", "2016-02-01 16:57:49.643513"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/bears/new" for 127.0.0.1 at 2016-02-01 11:57:49 -0500
+Processing by BearsController#new as HTML
+  Rendered bears/_form.html.erb (2.0ms)
+  Rendered bears/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "bears" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pacha"], ["description", "Bacha"], ["created_at", "2016-02-01 16:57:49.661117"], ["updated_at", "2016-02-01 16:57:49.661117"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/bears/1/edit" for 127.0.0.1 at 2016-02-01 11:57:49 -0500
+Processing by BearsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBear Load (0.1ms)[0m  [1mSELECT  "bears".* FROM "bears" WHERE "bears"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered bears/_form.html.erb (2.3ms)
+  Rendered bears/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.7ms)[0m  rollback transaction

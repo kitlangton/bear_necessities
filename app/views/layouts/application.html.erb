@@ -8,6 +8,8 @@
 </head>
 <body>
 
+  <%= link_to 'All Bears', bears_path %>
+  <hr>
   <% flash.each do |type, message| %>
     <div>
       <strong><%= type %>! <%= message %></strong>
